@@ -1,0 +1,370 @@
+/* General styles */
+html, body {
+    font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+    color: #4A4A4A;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/background.png");
+}
+
+/* Header Layout */
+header div {
+    display: flex;
+    align-items: center;  /* Vertically align logo and nav */
+    justify-content: space-between; /* Space between logo and nav */
+}
+
+/* Logo Image */
+header img {
+    width: 250px;  /* Adjust the logo size */
+    height: auto;
+}
+
+/* Navigation Bar */
+nav ul {
+
+	display: flex;
+	list-style: none;
+	margin: 0 175px 0 0;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 5px; /* Space between navigation items */
+}
+
+/* Navigation Links */
+nav ul li a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FD0D71;
+}
+
+/* Dropdown Menu for Navigation Bar */
+.dropdown {
+	position: flex;
+	display: inline-block;
+}
+
+.submenu {
+	background-image: url("../images/background.png");
+	display: none;
+	position: absolute;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	min-width: 150px;
+}
+
+.submenu li a {
+	background-color: #F5F5F5;
+	padding: 5px;
+	margin: 10px;
+	text-decoration: none;
+	color: #4A4A4A;
+	display: block;
+	text-align: center;
+}
+
+.submenu li a:hover {
+	background-color: #F5F5F5;
+}
+
+.dropdown:hover .submenu {
+	display: block;
+}
+
+main {
+	display: block;
+	line-height: 1.5;
+	background-color: #FFB347;
+	font-size: 100%;
+	padding: 1px;
+}
+
+/* Div containers inside main */
+main div {
+	display: block;
+	line-height: 1.5;
+	margin: 25px 150px 25px 150px;
+	background-color: #F5F5F5;
+	font-size: 100%;
+	padding: 1px;
+	border-radius: 8px;
+}
+
+/* Flexbox within the Article */
+.flex-article {
+    display: flex;
+	margin: 25px 150px 25px 150px;;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+}
+
+/* Article Content */
+.article-content {
+	margin: 0;
+    padding-right: 0 /* Space between text and image */
+}
+
+/* Image Positioned on the Right */
+.image-right {
+    flex: 0 0 30%; /* Fixed width for the image container */
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* Style for the image itself */
+.image-right img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the image */
+.image-right img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+	font-weight: bold;
+}
+
+h1 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 35px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	background-color: #6A0572;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+}
+
+h2 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 30px;
+	letter-spacing: -3px;
+	color: #F5F5F5;
+	background-color: #FD0D71;
+	text-align: center;
+	margin: 20px;
+	padding: 0;
+	border-radius: 8px;
+}
+
+h3 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 25px;
+	letter-spacing: -3px;
+	color: #4A4A4A;
+	text-align: center;
+	margin: 20px;
+	padding: 10px;
+}
+
+p {
+	margin: 20px;
+	font-weight: bold;
+}
+
+/* Better form container styling for FizzBuzz4 */
+#name-form {
+    width: 90%;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Spacing between labels and inputs */
+#name-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Uniform input styling */
+#name-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Settings section inside the form */
+#settings {
+    width: 90%;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+#name-form button {
+    margin-top: 20px;
+    background-color: #FD0D71;
+    color: white;
+    border: none;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 20px;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+#name-form button:hover {
+    background-color: #6A0572;
+}
+
+/* Results Container (Left-aligned) */
+#results-container {
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Unique Style (Multiples of 3) */
+.unique {
+    color: #6A0572;
+}
+
+/* Voice Style (Multiples of 5) */
+.voice {
+    color: #FFB347;
+}
+
+/* Unique Voice Style (Multiples of Both 3 & 5) */
+.unique-voice {
+    color: #FD0D71;
+}
+
+/* BANG Style (Multiples of 7) */
+.bang {
+	color: green;
+}
+
+/* Default "HI!" Style */
+.hi {
+    color: #4A4A4A;
+}
+
+/* Center the image and caption */
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;     
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+.image-container img {
+    width: 680px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.image-container figcaption {
+    margin-top: 10px;
+    font-size: 1rem; 
+    color: #555; 
+}
+
+.logo-container img {
+    width: 250px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+blockquote {
+	font-size: 1.5rem;
+	margin: 20px;	
+}
+
+/* Footer Navigation Bar Layout */
+nav a {
+	padding: 25px;
+	color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+	font-size: 20px;
+}
+
+/* Pseudo-Class for Hypertext Links */
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #FD0D71; 
+}
+
+/* Footer Layout */
+footer {
+    text-align: center; 
+    padding: 5px; 
+	color: #4A4A4A;
+    text-align: center; 
+}
+
+/* Responsive Behavior - Smaller Screens */
+/* @media (max-width: 1024px) { */
+    /* .image-container img { */
+        /* width: 80%; */
+        /* max-height: 60vh; */
+    /* } */
+/* } */
+
+/* @media (max-width: 768px) { */
+    /* .image-container img { */
+        /* width: 70%; */
+        /* max-height: 50vh; */
+    /* } */
+
+    /* .flex-article { */
+        /* flex-direction: column; */
+    /* } */
+
+    /* .image-right { */
+        /* max-width: 100%; */
+        /* margin: 20px auto 0; */
+    /* } */
+/* } */
+
+
+/* @media (max-width: 480px) { */
+    /* .image-container img { */
+        /* width: 100%; */
+        /* max-height: 40vh; */
+    /* } */
+/* } */
